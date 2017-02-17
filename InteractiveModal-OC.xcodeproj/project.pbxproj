@@ -13,6 +13,9 @@
 		2478A6591E52E96F00328273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2478A6571E52E96F00328273 /* Main.storyboard */; };
 		2478A65B1E52E96F00328273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2478A65A1E52E96F00328273 /* Assets.xcassets */; };
 		2478A65E1E52E96F00328273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2478A65C1E52E96F00328273 /* LaunchScreen.storyboard */; };
+		2478A6701E52EBB400328273 /* DismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478A66F1E52EBB400328273 /* DismissAnimator.m */; };
+		2478A6731E52F12900328273 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478A6721E52F12900328273 /* ModalViewController.m */; };
+		24B634021E54315000C502D9 /* GestureTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B634011E54315000C502D9 /* GestureTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		2478A65A1E52E96F00328273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2478A65D1E52E96F00328273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2478A65F1E52E96F00328273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2478A66E1E52EBB400328273 /* DismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissAnimator.h; sourceTree = "<group>"; };
+		2478A66F1E52EBB400328273 /* DismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissAnimator.m; sourceTree = "<group>"; };
+		2478A6711E52F12900328273 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		2478A6721E52F12900328273 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		24B634001E54315000C502D9 /* GestureTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureTableView.h; sourceTree = "<group>"; };
+		24B634011E54315000C502D9 /* GestureTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				2478A6521E52E96F00328273 /* AppDelegate.m */,
 				2478A6541E52E96F00328273 /* ViewController.h */,
 				2478A6551E52E96F00328273 /* ViewController.m */,
+				2478A6711E52F12900328273 /* ModalViewController.h */,
+				2478A6721E52F12900328273 /* ModalViewController.m */,
+				24B634001E54315000C502D9 /* GestureTableView.h */,
+				24B634011E54315000C502D9 /* GestureTableView.m */,
+				2478A66E1E52EBB400328273 /* DismissAnimator.h */,
+				2478A66F1E52EBB400328273 /* DismissAnimator.m */,
 				2478A6571E52E96F00328273 /* Main.storyboard */,
 				2478A65A1E52E96F00328273 /* Assets.xcassets */,
 				2478A65C1E52E96F00328273 /* LaunchScreen.storyboard */,
@@ -110,6 +125,7 @@
 				TargetAttributes = {
 					2478A64A1E52E96F00328273 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H5YBBSJHKX;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2478A6561E52E96F00328273 /* ViewController.m in Sources */,
+				24B634021E54315000C502D9 /* GestureTableView.m in Sources */,
 				2478A6531E52E96F00328273 /* AppDelegate.m in Sources */,
+				2478A6731E52F12900328273 /* ModalViewController.m in Sources */,
 				2478A6501E52E96F00328273 /* main.m in Sources */,
+				2478A6701E52EBB400328273 /* DismissAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +291,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H5YBBSJHKX;
 				INFOPLIST_FILE = "InteractiveModal-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ws.test.InteractiveModal-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ws.test.InteractiveModal-OC2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -283,9 +304,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H5YBBSJHKX;
 				INFOPLIST_FILE = "InteractiveModal-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ws.test.InteractiveModal-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ws.test.InteractiveModal-OC2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -309,6 +332,7 @@
 				2478A6641E52E96F00328273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
