@@ -130,6 +130,14 @@
     }
     return NO;
 }
+#pragma mark - 
+
+// 关闭顶部弹簧效果
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    scrollView.bounces = (scrollView.contentOffset.y <= [UIScreen mainScreen].bounds.size.height / 3) ? NO : YES;
+}
+#pragma mark -
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 20;
 }
